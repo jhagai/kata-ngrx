@@ -7,7 +7,6 @@ import {KataStoreModule} from "./store/kata-store.module";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgrxFormsModule} from "ngrx-forms";
 import {HttpClientModule} from "@angular/common/http";
-import {TodosModule} from "@todos/todos.module";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
@@ -25,8 +24,7 @@ import {MatButtonModule} from "@angular/material/button";
     MatButtonModule,
     BrowserAnimationsModule,
     NgrxFormsModule,
-    HttpClientModule,
-    TodosModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
