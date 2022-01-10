@@ -1,7 +1,8 @@
 import {Component} from '@angular/core';
 import {Store} from "@ngrx/store";
 import {CounterStateModel} from "../../../store/counter.models";
-import {Observable, of} from "rxjs";
+import {Observable} from "rxjs";
+import {COUNTER_DECREMENT_TYPE, COUNTER_INCREMENT_TYPE} from "../../store/counter.actions";
 
 @Component({
   selector: 'app-counter-redux',
@@ -13,16 +14,15 @@ export class CounterReduxComponent {
   counterState$: Observable<CounterStateModel>;
 
   constructor(private store: Store<{ counter: CounterStateModel }>) {
-    // @TODO remplace line below by store selection.
-    this.counterState$ = of({counter: 0});
+    this.counterState$ = store.select('counter');
   }
 
   decrement() {
-    // @TODO remplace line below by dispatching the appropriate action to the store.
+    this.store.dispatch({type: COUNTER_DECREMENT_TYPE});
   }
 
   increment() {
-    // @TODO remplace line below by dispatching the appropriate action to the store.
+    this.store.dispatch({type: COUNTER_INCREMENT_TYPE});
   }
 
 }
