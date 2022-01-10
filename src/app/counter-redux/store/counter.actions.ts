@@ -1,2 +1,4 @@
-export const COUNTER_INCREMENT_TYPE='[Counter] increment';
-export const COUNTER_DECREMENT_TYPE='[Counter] decrement';
+import {createAction} from "@ngrx/store";
+
+export const incrementCounter = createAction('[Counter] increment');
+export const decrementCounter = createAction('[Counter] decrement');
