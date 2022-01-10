@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.kata {
+  .mat-card-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.todo-form-field {
+  &__title {
+    width: 100%
+  }
+
+  &__description {
+    width: 100%
+  }
+}
+

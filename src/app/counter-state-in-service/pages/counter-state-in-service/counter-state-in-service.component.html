@@ -1,0 +1,11 @@
+<mat-card class="counter" *ngIf="counterState$ | async as counterState">
+  <mat-card-header>
+    <h1>Counter state in service</h1>
+  </mat-card-header>
+  <mat-card-content>
+    <button mat-flat-button (click)="decrement()">-</button>
+    <span>{{counterState.counter}}</span>
+    <button mat-flat-button (click)="increment()">+</button>
+  </mat-card-content>
+  <mat-card-footer></mat-card-footer>
+</mat-card>
