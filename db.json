@@ -1,40 +1,9 @@
 {
   "todos": [
     {
-      "id": 0,
-      "title": "First todo title",
-      "details": "First todo details",
-      "type": "[Todo] Update"
-    },
-    {
-      "id": 1,
-      "title": "Second todo title",
-      "details": "Second todo details",
-      "type": "[Todo] Update"
-    },
-    {
-      "title": "Hello",
-      "details": "Details",
-      "type": "[Todo] Add request",
-      "id": 2
-    },
-    {
-      "title": "aaa",
-      "details": "bbb",
-      "type": "[Todo] Add request",
-      "id": 3
-    },
-    {
-      "title": "aaaa",
-      "details": "bbb",
-      "type": "[Todo] Add request",
-      "id": 4
-    },
-    {
-      "title": "ccc",
-      "details": "ddd",
-      "type": "[Todo] Add request",
-      "id": 5
+      "title": "First title",
+      "details": "First details",
+      "id": 1
     }
   ]
 }
