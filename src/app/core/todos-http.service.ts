@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {TodoModel, TodoFormModel} from "@todos/store/todos.models";
+import {TodoModel, TodoFormModel} from "@todos/models/todos.models";
 import {Observable} from "rxjs";
 
 @Injectable({

@@ -1,0 +1,21 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Todo list</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-selection-list [multiple]="false" (selectionChange)="selectTodo($event)">
+      <mat-list-option *ngFor="let todo of state.todos" [value]="todo">
+        {{ todo.id }} - {{ todo.title }}
+      </mat-list-option>
+    </mat-selection-list>
+    <ng-container *ngIf="state.loadTodosPending">
+      Loading todos ...
+    </ng-container>
+    <ng-container *ngIf="state.loadError">
+      Load todos error
+    </ng-container>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-flat-button color="primary" (click)="createTodo()">New</button>
+  </mat-card-actions>
+</mat-card>

@@ -14,10 +14,10 @@ const routes: Routes = [
     path: 'counter-redux',
     loadChildren: () => import('./counter-redux/counter-redux.module').then(m => m.CounterReduxModule),
   },
-  /*{
+  {
     path: 'todos',
     loadChildren: () => import('./todos/todos.module').then(m => m.TodosModule),
-  },*/
+  },
   {path: '**', redirectTo: '/counter', pathMatch: 'full'}
 ];
 

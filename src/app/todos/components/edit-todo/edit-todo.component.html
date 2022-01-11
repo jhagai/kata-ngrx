@@ -1,0 +1,23 @@
+<mat-card class="todo-form">
+  <mat-card-header>
+    <mat-card-title>Edit todo {{ state.selected?.id }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form novalidate [ngrxFormState]="state.editionForm">
+      <mat-form-field class="todo-form-field__title">
+        <mat-label>Title</mat-label>
+        <input matInput placeholder="Enter a title" [ngrxFormControlState]="state.editionForm.controls.title">
+      </mat-form-field>
+
+      <mat-form-field class="todo-form-field__description">
+        <mat-label>Details</mat-label>
+        <textarea matInput placeholder="Enter a detail"
+                  [ngrxFormControlState]="state.editionForm.controls.details"></textarea>
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-flat-button color="primary" (click)="updateTodo(state.editionForm.value)">Update
+    </button>
+  </mat-card-actions>
+</mat-card>
